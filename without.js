@@ -17,7 +17,16 @@ const eqArrays = function (arr1, arr2) {
 
 
 const without = function (source, itemsToRemove) {
-  console.log(source.filter(itemsToRemove.includes(source)));
+  const result = [];
+
+  for (let i = 0; i < source.length; i++){
+    const sourceElement = source[i];
+
+    if (!itemsToRemove.includes(sourceElement)) {
+      result.push(sourceElement);
+    }
+  }
+  return result;
 }
 
 
@@ -33,5 +42,11 @@ const assertArraysEqual = function (actualArr, expectedArr) {
 without([1, 2, 3], [1]) // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 
-assertArraysEqual([1, 2, 3], [1]);
-assertArraysEqual(["1", "2", "3"], [1, 2, "3"]);
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]); // no need to capture return value for this test case
+// Make sure the original array was not altered by the without function
+console.log(without(words, ["lighthouse"]));
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
