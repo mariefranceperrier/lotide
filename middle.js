@@ -1,6 +1,6 @@
 // Test assertion functions
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -11,9 +11,9 @@ const eqArrays = function (arr1, arr2) {
     }
   }
   return true;
-}
+};
 
-const assertArraysEqual = function (actualArr, expectedArr) {
+const assertArraysEqual = function(actualArr, expectedArr) {
   if (!eqArrays(actualArr, expectedArr)) {
     console.log(`🔴 Assertion failed: ${actualArr} !== ${expectedArr}`);
   } else {
@@ -28,22 +28,22 @@ const assertArraysEqual = function (actualArr, expectedArr) {
 
 
 
-const middle = function (arr) {
+const middle = function(arr) {
   
   if (arr.length <= 2) {
     return [];
   }
   
   if (arr.length % 2 !== 0) {
-    const middleIndex = Math.floor(arr.length / 2); 
+    const middleIndex = Math.floor(arr.length / 2);
     return [arr[middleIndex]];
 
   } else {
     const middleIndex1 = (arr.length / 2) - 1;
     const middleIndex2 = arr.length / 2;
     return [arr[middleIndex1], arr[middleIndex2]];
-    }
   }
+};
 
 
 // TEST CODE
