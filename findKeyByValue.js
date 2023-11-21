@@ -13,7 +13,6 @@ const findKeyByValue = function (obj, value) {
       return key;      
     } 
   }
-  return undefined;
 }
 
 // test code
