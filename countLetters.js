@@ -6,10 +6,6 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// The function should take in a sentence (as a string) and then return a count of each of the letters in that sentence.
-// 
-
-
 const countLetters = function (sentence) {
   const result = {};
   const cleanSentence = sentence.split(' ').join('');
@@ -25,3 +21,7 @@ const countLetters = function (sentence) {
 }
 
 console.log(countLetters("lighthouse in the house"));
+
+const testSentence = "hi you";
+const result1 = countLetters(testSentence);
+assertEqual(result1["h"], 1);
