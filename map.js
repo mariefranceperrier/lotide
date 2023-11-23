@@ -37,18 +37,15 @@ assertArraysEqual(result1, ['g', 'c', 't', 'm', 't']);
 
 
 // 2nd scenario:
-const result2 = [];
-const test2 = words.map(function (word) {
-  return result2.push(word[0])
-});
 
+const result2 = map(words, word => word.length);
 console.log(result2);
-assertArraysEqual(result2, ['g', 'c', 't', 'm', 't']);
+assertArraysEqual(result2, [6, 7, 2, 5, 3]);
 
 
 // 3rd scenario:
-const result3 = [];
-const test3 = words.map(word => result3.push(word[0]));
+
+const result3 = words.map(word => word.slice(-1));
 
 console.log(result3);
-assertArraysEqual(result3, ['g', 'c', 't', 'm', 't']);
+assertArraysEqual(result3, ["d", "l", "o", "r", "m"]);
