@@ -19,8 +19,10 @@ const assertArraysEqual = function (actualArr, expectedArr) {
   }
 };
 
-// 1. The function will return a "slice of the array with elements taken from the beginning." 
-// 2. It should keep going until the callback / predicate returns a truthy value.
+// 1.We will be implementing a function quite similar to this one, but isn't present in their library: takeUntil.
+// 2. It will take in two parameters an array and a callback 
+// 3. The function will return a "slice of the array with elements taken from the beginning." 
+// 4. It should keep going until the callback / predicate returns a truthy value.
 
 const takeUntil = function (array, callback) {
   
