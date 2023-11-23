@@ -45,7 +45,7 @@ assertArraysEqual(result2, [6, 7, 2, 5, 3]);
 
 // 3rd scenario:
 
-const result3 = words.map(word => word.slice(-1));
+const result3 = map(words, word => word.slice(-1));
 
 console.log(result3);
 assertArraysEqual(result3, ["d", "l", "o", "r", "m"]);
