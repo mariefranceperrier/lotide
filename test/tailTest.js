@@ -9,6 +9,6 @@ describe("#tail", () => {
   });
 
   it("returns 2 for the length of words", () => {
-    assert.deepEqual(tail(words).length, 2)
+    assert.strictEqual(tail(words).length, 2)
   });
 });
