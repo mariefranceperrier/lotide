@@ -8,7 +8,8 @@ describe("#tail", () => {
     assert.deepEqual(tail(words), ['Lighthouse', 'Labs']);
   });
 
-  it("returns 2 for the length of words", () => {
-    assert.strictEqual(tail(words).length, 2)
+  it("makes sure the original array is not altered by the tail function", () => {
+    tail(words);
+    assert.strictEqual(words.length, 3)
   });
 });
