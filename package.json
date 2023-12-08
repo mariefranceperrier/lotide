@@ -1,0 +1,26 @@
+{
+  "name": "@marie_wuwei/lotide",
+  "version": "1.0.2",
+  "description": "A library of utility functions for common tasks in Javascript",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariefranceperrier/lotide.git"
+  },
+  "author": "Marie-France Perrier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariefranceperrier/lotide/issues"
+  },
+  "homepage": "https://github.com/mariefranceperrier/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^9.2.2"
+  }
+}
