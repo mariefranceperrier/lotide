@@ -1,8 +1,8 @@
 {
   "name": "@marie_wuwei/lotide",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A library of utility functions for common tasks in Javascript",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },

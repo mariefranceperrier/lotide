@@ -20,6 +20,8 @@ const assertObjectsEqual = require('./assertObjectsEqual');
 const takeUntil = require('./takeUntil');
 const findKey = require('./findKey');
 
+const map = require('./map');
+
 
 module.exports = {
   assertEqual,
@@ -41,6 +43,8 @@ module.exports = {
   assertObjectsEqual,
   
   takeUntil,
-  findKey
+  findKey,
+
+  map
 
 };
