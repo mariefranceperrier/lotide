@@ -42,3 +42,4 @@ The following functions are currently implemented:
 * `assertObjectsEqual()`: A function for asserting that two objects are equal.
 * `takeUntil()`: A function which will keep collecting items from a provided array until the callback provided returns a truthy value.
 * `findKey()`: A function which takes in an object and a callback. It scans the object and return the first key for which the callback returns a truthy value. If no key is found, then it returns undefined.
+* `map()`: A function which takes in two arguments (an array to map and a callback function) and returns a new array based on the results of the callback function.
